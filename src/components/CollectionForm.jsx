@@ -61,7 +61,7 @@ const CollectionForm = ({ onSubmit }) => {
             value={formData.name}
             onChange={handleChange}
             className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 text-sm"
-            placeholder="John Doe"
+            placeholder="Rajesh Kumar"
           />
         </div>
 
@@ -75,7 +75,7 @@ const CollectionForm = ({ onSubmit }) => {
             value={formData.email}
             onChange={handleChange}
             className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 text-sm"
-            placeholder="john.doe@example.com"
+            placeholder="rajesh.kumar@example.com"
           />
         </div>
 
