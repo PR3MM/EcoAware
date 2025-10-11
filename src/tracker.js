@@ -246,7 +246,6 @@ async function sendDataToServer(data) {
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
-        console.log('Data sent successfully:', data);
     }
     catch (error) {
         console.error('Error sending data to server:', error);
@@ -273,7 +272,6 @@ window.addEventListener('scroll', () => {
     if (!scrollTimeout) {
         scrollTimeout = setTimeout(() => {
             const scrollDepth = getScrollDepth();
-            console.log('Scroll Depth:', scrollDepth + '%');
             scrollTimeout = null;
         }, 1000); // one update per second
     }
@@ -283,20 +281,17 @@ window.addEventListener('scroll', () => {
 document.addEventListener('click', (event) => {
     const x = event.clientX;
     const y = event.clientY;
-    console.log('Click at:', x, y);
 });
 
 // Event listener to track time on page
 window.addEventListener('beforeunload', () => {
     const timeSpent = getTimeOnPage();
-    console.log('Time spent on page:', timeSpent + ' seconds');
 }
 );
 
 // Event listener to track bounce rate
 window.addEventListener('beforeunload', () => {
     const bounceRate = getBounceRate();
-    console.log('Bounce Rate:', bounceRate === 1 ? 'Bounce' : 'Not a Bounce');
 }
 );
 
