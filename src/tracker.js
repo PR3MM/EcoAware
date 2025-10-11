@@ -362,7 +362,7 @@ async function trackMetrics() {
         currentTime
     };
     // Send the data to the server
-    console.log('Tracking data:', data);
+    // console.log('Tracking data:', data);
     sendDataToServer(data);
 }
 
