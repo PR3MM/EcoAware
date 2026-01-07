@@ -15,7 +15,7 @@ export default function Navbar() {
             </Link>
           </div>
 
-          <div className="hidden md:flex items-center space-x-1">
+          <div data-cy='navbar-home' className="hidden md:flex items-center space-x-1  " >
             <NavLink
               to="/"
               end
@@ -30,6 +30,7 @@ export default function Navbar() {
 
             <NavLink
               to="/collection"
+              data-cy='navbar-collection'
               className={({ isActive }) =>
                 `px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                   isActive ? 'bg-gray-900 text-white' : 'text-gray-700 hover:bg-gray-100'
