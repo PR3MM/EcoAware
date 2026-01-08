@@ -1,4 +1,5 @@
-
+describe('form', () => {
+  it('visit the page', () => {
     cy.contains('Schedule E-Waste Collection')
     cy.get('[name="name"]')
     cy.get('[name="email"]')
@@ -19,4 +20,6 @@
     cy.get('[name="weight"]').type(1)
     cy.get(':nth-child(5) > .w-full').click()
 
-    cy.get('.mt-4').should('be.visible')
+      cy.get('.mt-4').should('be.visible')
+    })
+  })

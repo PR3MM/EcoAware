@@ -126,8 +126,9 @@ const SegregationGuide = () => {
       )}
 
       {filtered.map((category) => (
-        <div key={category.id} className="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+        <div   key={category.id} className="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
           <button
+          data-cy={`category-${category.id}`}
             onClick={() => toggleCard(category.id)}
             aria-expanded={openCard === category.id}
             className="w-full px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition-colors"
